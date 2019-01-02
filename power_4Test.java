@@ -29,6 +29,7 @@ public class power_4Test {
         assertEquals(expectedValue1,actualValue1);
         assertEquals(expectedValue2,actualValue2);
     }
+    @Test
     public void power_4_failure(){
         int i = 518;
         int j = 525;
