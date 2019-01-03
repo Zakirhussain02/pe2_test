@@ -20,8 +20,8 @@ public class power_4Test {
 
     @Test
     public void power_4_success(){
-        int i = 1296;
-        int j = 625;
+        int i = 16;
+        int j = 256;
         String expectedValue1 = "Number is power of 4";
         String expectedValue2 = "Number is power of 4";
         String actualValue1 = test.power_4(i);
@@ -29,7 +29,6 @@ public class power_4Test {
         assertEquals(expectedValue1,actualValue1);
         assertEquals(expectedValue2,actualValue2);
     }
-    @Test
     public void power_4_failure(){
         int i = 518;
         int j = 525;

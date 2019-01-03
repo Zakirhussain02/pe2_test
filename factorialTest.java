@@ -21,28 +21,32 @@ public class factorialTest {
     @Test
     public void fact_successs(){
         int i = 7;
-        String expectedValue = "5040";
-        String actualValue = fact.fact_int(i);
-    }
-    @Test
-    public void fact_failure(){
-        int i = -7;
-        String expectedValue = "negative number";
-        String actualValue = fact.fact_int(i);
+        int j = -7;
+        int expectedValue1 = 5040 ;
+        String expectedValue2 = "negative number";
+        int actualValue1 = fact.fact_int(i);
+        int actualValue2 = fact.fact_int(j);
+        assertEquals(expectedValue1,actualValue1);
+        assertEquals(expectedValue2,expectedValue2);
     }
 
     //for long
     @Test
-    public void facts_success(){
-        long i = 20;
-        String expectedValue = "2432902008176640000";
-        String actualValue = fact.fact_long(i);
-    }
-    @Test
     public void facts_failure(){
-        int i = -7;
-        String expectedValue = "negative number";
-        String actualValue = fact.fact_long(i);
+        long i = -7;
+        long j = 0;
+        long k = 12;
+        long expectedValue3 = 479001600;
+        long expectedValue1 = 1;
+        String expectedValue2 = "negative number";
+        long actualValue1 = fact.fact_long(i);
+        long actualValue2 = fact.fact_long(j);
+        long actualValue3 = fact.fact_long(k);
+        assertEquals(expectedValue1,actualValue1);
+        assertEquals(expectedValue2,actualValue2);
+        assertEquals(expectedValue3,actualValue3);
+
+
     }
 
 }
