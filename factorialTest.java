@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
+//test class for factorial
 public class factorialTest {
 
     @Before
